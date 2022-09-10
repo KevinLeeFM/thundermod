@@ -1,0 +1,20 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "A1"
+length = 2.0
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("MeshInstance1")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1.72565, 0.930967, 0, 0, 0.365104, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("MeshInstance2")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0.908859, 0.589517, 0, 0, 0.807756, 1, 1, 1, 0.4, 1, 15.0552, 0, -4.31259, 0.589517, 0, 0, 0.807756, 1, 1, 1, 1.7, 1, 2.82285, 3.14132, 12.0387, 0.589517, 0, 0, 0.807756, 1, 1, 1 )

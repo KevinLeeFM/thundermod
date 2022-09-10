@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://animation_tests/AnimationB1.tres" type="Animation" id=1]
+[ext_resource path="res://animation_tests/AnimationRoot.gd" type="Script" id=2]
+[ext_resource path="res://animation_tests/AnimationA1.tres" type="Animation" id=3]
+
+[sub_resource type="PrismMesh" id=4]
+
+[node name="Node2D" type="Spatial"]
+
+[node name="AnimationRoot" type="Spatial" parent="."]
+script = ExtResource( 2 )
+
+[node name="MeshInstance1" type="MeshInstance" parent="AnimationRoot"]
+mesh = SubResource( 4 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="AnimationRoot"]
+transform = Transform( 1, 0, 0, 0, 0.30494, -0.952371, 0, 0.952371, 0.30494, 0, 0, 0.908859 )
+mesh = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationRoot"]
+anims/AnimationA1 = ExtResource( 3 )
+anims/AnimationB1 = ExtResource( 1 )
+blend_times = [ "AnimationA1", "AnimationA1", 0.2, "AnimationA1", "AnimationB1", 0.2, "AnimationB1", "AnimationA1", 0.5, "AnimationB1", "AnimationB1", 0.5 ]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 26.3721 )
