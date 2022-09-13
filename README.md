@@ -6,7 +6,7 @@ Experimentations included:
 - RigidBody experimentation
 - Pixel art texture import
 - Switching between first-person and third-person by scrolling with the mouse wheel
-- A preliminary implementation of voxel generation with 
+- A preliminary implementation of voxel generation written in C#
 
 ## Credits
 Open 3D Mannequin by GDQuest and contributors (https://www.gdquest.com/), dual-licensed as such:
