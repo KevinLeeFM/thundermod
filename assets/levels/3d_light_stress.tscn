@@ -1,0 +1,892 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://night.tres" type="Environment" id=1]
+[ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://VoxelChunk.tscn" type="PackedScene" id=3]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0081, 49.1527, 15.1204 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 1 )
+
+[node name="CSGBox2" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17267, 0, 0 )
+
+[node name="VoxelChunk2" parent="." instance=ExtResource( 3 )]
+
+[node name="CSGSphere" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.101291, 0, 0, 0, 1, 9.77842, -29.0066, -3.299 )
+use_collision = true
+radius = 79.474
+radial_segments = 64
+rings = 64
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 16.933, 8 )
+
+[node name="OmniLight" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00981, 0 )
+shadow_enabled = true
+
+[node name="OmniLight2" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00981, 0 )
+shadow_enabled = true
+
+[node name="OmniLight3" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00981, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight4" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00981, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight5" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00981, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight6" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00981, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight7" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 0 )
+shadow_enabled = true
+
+[node name="OmniLight8" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 0 )
+shadow_enabled = true
+
+[node name="OmniLight9" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight10" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight11" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight12" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight13" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, -4.19695 )
+shadow_enabled = true
+
+[node name="OmniLight14" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, -4.19695 )
+shadow_enabled = true
+
+[node name="OmniLight15" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight16" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight17" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight18" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight19" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00981, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight20" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00981, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight21" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00981, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight22" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00981, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight23" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00981, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight24" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00981, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight25" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4594, 2.16774, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight26" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight27" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight28" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight29" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight30" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight31" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, -1.78321 )
+shadow_enabled = true
+
+[node name="OmniLight32" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, -1.78321 )
+shadow_enabled = true
+
+[node name="OmniLight33" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight34" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight35" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight36" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight37" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.30609, 0 )
+shadow_enabled = true
+
+[node name="OmniLight38" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.30609, 0 )
+shadow_enabled = true
+
+[node name="OmniLight39" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.30609, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight40" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.30609, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight41" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.30609, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight42" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.30609, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight43" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 0 )
+shadow_enabled = true
+
+[node name="OmniLight44" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 0 )
+shadow_enabled = true
+
+[node name="OmniLight45" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight46" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight47" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight48" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 2.33736 )
+shadow_enabled = true
+
+[node name="OmniLight49" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, -4.19695 )
+shadow_enabled = true
+
+[node name="OmniLight50" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, -4.19695 )
+shadow_enabled = true
+
+[node name="OmniLight51" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight52" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight53" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight54" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8917, 2.46402, -1.85959 )
+shadow_enabled = true
+
+[node name="OmniLight55" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.30609, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight56" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.30609, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight57" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.30609, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight58" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.30609, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight59" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.30609, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight60" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.30609, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight61" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight62" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 2.41373 )
+shadow_enabled = true
+
+[node name="OmniLight63" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight64" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight65" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight66" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 4.75109 )
+shadow_enabled = true
+
+[node name="OmniLight67" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, -1.78321 )
+shadow_enabled = true
+
+[node name="OmniLight68" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, -1.78321 )
+shadow_enabled = true
+
+[node name="OmniLight69" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight70" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight71" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, 0.554149 )
+shadow_enabled = true
+
+[node name="OmniLight72" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.72, 2.03172, 2.18025 )
+shadow_enabled = true
+
+[node name="OmniLight73" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight74" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight75" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight76" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight77" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00982, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight78" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00982, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight79" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight80" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight81" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight82" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight83" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight84" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight85" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 12.2117 )
+shadow_enabled = true
+
+[node name="OmniLight86" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 12.2117 )
+shadow_enabled = true
+
+[node name="OmniLight87" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight88" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight89" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight90" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight91" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight92" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight93" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight94" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight95" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00982, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight96" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00982, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight97" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4594, 2.16774, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight98" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight99" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight100" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight101" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight102" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight103" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 14.6255 )
+shadow_enabled = true
+
+[node name="OmniLight104" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 14.6255 )
+shadow_enabled = true
+
+[node name="OmniLight105" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight106" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight107" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight108" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight109" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight110" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight111" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight112" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight113" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.3061, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight114" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.3061, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight115" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight116" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 16.4087 )
+shadow_enabled = true
+
+[node name="OmniLight117" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight118" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight119" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight120" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 18.746 )
+shadow_enabled = true
+
+[node name="OmniLight121" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 12.2117 )
+shadow_enabled = true
+
+[node name="OmniLight122" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 12.2117 )
+shadow_enabled = true
+
+[node name="OmniLight123" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight124" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight125" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight126" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8917, 2.46402, 14.5491 )
+shadow_enabled = true
+
+[node name="OmniLight127" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight128" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight129" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight130" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight131" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.3061, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight132" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.3061, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight133" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight134" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 18.8224 )
+shadow_enabled = true
+
+[node name="OmniLight135" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight136" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight137" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight138" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 21.1598 )
+shadow_enabled = true
+
+[node name="OmniLight139" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 14.6255 )
+shadow_enabled = true
+
+[node name="OmniLight140" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 14.6255 )
+shadow_enabled = true
+
+[node name="OmniLight141" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight142" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight143" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, 16.9628 )
+shadow_enabled = true
+
+[node name="OmniLight144" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.72, 2.03172, 18.5889 )
+shadow_enabled = true
+
+[node name="OmniLight145" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight146" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight147" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight148" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight149" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00982, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight150" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00982, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight151" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight152" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight153" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight154" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight155" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight156" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight157" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 23.0428 )
+shadow_enabled = true
+
+[node name="OmniLight158" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 23.0428 )
+shadow_enabled = true
+
+[node name="OmniLight159" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight160" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight161" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight162" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight163" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight164" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight165" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00982, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight166" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849754, 1.00982, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight167" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.18216, 1.00982, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight168" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.03191, 1.00982, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight169" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4594, 2.16774, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight170" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight171" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.21074, 2.16774, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight172" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36099, 2.16774, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight173" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02858, 2.16774, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight174" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.17883, 2.16774, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight175" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 25.4566 )
+shadow_enabled = true
+
+[node name="OmniLight176" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 25.4566 )
+shadow_enabled = true
+
+[node name="OmniLight177" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.75781, 2.16774, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight178" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60757, 2.16774, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight179" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.93998, 2.16774, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight180" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78973, 2.16774, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight181" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight182" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight183" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight184" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight185" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.3061, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight186" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.3061, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight187" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight188" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 27.2398 )
+shadow_enabled = true
+
+[node name="OmniLight189" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight190" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight191" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight192" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 29.5771 )
+shadow_enabled = true
+
+[node name="OmniLight193" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 23.0428 )
+shadow_enabled = true
+
+[node name="OmniLight194" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 23.0428 )
+shadow_enabled = true
+
+[node name="OmniLight195" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight196" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight197" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight198" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8917, 2.46402, 25.3802 )
+shadow_enabled = true
+
+[node name="OmniLight199" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight200" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight201" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6814, 1.3061, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight202" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.8316, 1.3061, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight203" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4992, 1.3061, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight204" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6495, 1.3061, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight205" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight206" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 29.6535 )
+shadow_enabled = true
+
+[node name="OmniLight207" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8921, 2.46402, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight208" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0424, 2.46402, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight209" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20.71, 2.46402, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight210" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8602, 2.46402, 31.9909 )
+shadow_enabled = true
+
+[node name="OmniLight211" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 25.4566 )
+shadow_enabled = true
+
+[node name="OmniLight212" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 25.4566 )
+shadow_enabled = true
+
+[node name="OmniLight213" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9236, 2.46402, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight214" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0738, 2.46402, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight215" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7414, 2.46402, 27.7939 )
+shadow_enabled = true
+
+[node name="OmniLight216" type="OmniLight" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.72, 2.03172, 29.42 )
+shadow_enabled = true

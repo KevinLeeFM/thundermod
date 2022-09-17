@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/3d/level/playground.gltf" type="PackedScene" id=1]
 [ext_resource path="res://assets/materials/obstacle.tres" type="Material" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/theme/fonts/font_title.tres" type="DynamicFont" id=4]
 [ext_resource path="res://assets/materials/tiles.tres" type="Material" id=5]
 [ext_resource path="res://assets/materials/Gold.tres" type="Material" id=6]
+[ext_resource path="res://default_env.tres" type="Environment" id=7]
+[ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TextMesh" id=2]
 material = ExtResource( 6 )
@@ -86,7 +88,7 @@ mesh = SubResource( 5 )
 material/0 = ExtResource( 5 )
 
 [node name="StaticBody" type="StaticBody" parent="TestMap/Ground" index="0"]
-collision_layer = 2
+collision_layer = 3
 collision_mask = 0
 
 [node name="CollisionShape" type="CollisionShape" parent="TestMap/Ground/StaticBody" index="0"]
@@ -96,3 +98,9 @@ shape = SubResource( 6 )
 [node name="DirectionalLight" type="DirectionalLight" parent="." index="3"]
 transform = Transform( -0.50003, -0.803491, 0.323066, 0, 0.373053, 0.92781, -0.866008, 0.463933, -0.186538, 0, 8.87506, 0 )
 shadow_enabled = true
+
+[node name="Player" parent="." index="4" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8654, 2.00676, 21.5448 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="5"]
+environment = ExtResource( 7 )

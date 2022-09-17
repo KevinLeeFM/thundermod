@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://garden.tres" type="Environment" id=1]
 [ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/materials/soil_wavy.tres" type="Material" id=4]
 [ext_resource path="res://assets/materials/Gold.tres" type="Material" id=5]
 [ext_resource path="res://assets/materials/soil_crumbled.tres" type="Material" id=6]
+[ext_resource path="res://VoxelChunk.tscn" type="PackedScene" id=7]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.176471, 0.45098, 0.301961, 1 )
@@ -16,6 +17,9 @@ metallic_specular = 0.0
 [sub_resource type="SphereShape" id=3]
 
 [node name="Spatial" type="Spatial"]
+
+[node name="VoxelChunk" parent="." instance=ExtResource( 7 )]
+transform = Transform( 0.930238, 0, -0.366956, 0, 1, 0, 0.366956, 0, 0.930238, 13.564, 0, -13.7987 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 1 )
