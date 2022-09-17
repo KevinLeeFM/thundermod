@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://src/Player/Mannequiny.tscn" type="PackedScene" id=2]
@@ -9,12 +9,32 @@
 [ext_resource path="res://src/Player/States/Run.gd" type="Script" id=7]
 [ext_resource path="res://src/Player/Camera/CameraRig.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Player/PlayerController.gd" type="Script" id=9]
+[ext_resource path="res://src/Player/Inventory/Inventory.tscn" type="PackedScene" id=10]
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=1]
 
 [sub_resource type="CapsuleShape" id=2]
 radius = 0.3
-height = 1.25
+height = 1.2
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends Node
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+    pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#    pass
+"
 
 [node name="Player" type="KinematicBody"]
 script = ExtResource( 1 )
@@ -26,7 +46,7 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0
 parameters/playback = SubResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.875, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.9, 0 )
 shape = SubResource( 2 )
 
 [node name="StateMachine" type="Node" parent="."]
@@ -37,7 +57,6 @@ initial_state = NodePath("Move/Idle")
 script = ExtResource( 4 )
 max_speed = 8.0
 move_speed = 6.0
-gravity = -70.0
 rotation_speed_factor = 15.0
 
 [node name="Idle" type="Node" parent="StateMachine/Move"]
@@ -49,10 +68,15 @@ script = ExtResource( 6 )
 [node name="Run" type="Node" parent="StateMachine/Move"]
 script = ExtResource( 7 )
 
+[node name="Slide" type="Node" parent="StateMachine/Move"]
+script = SubResource( 3 )
+
 [node name="CameraRig" parent="." instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62988, 0 )
 
 [node name="PlayerController" type="Node" parent="."]
 script = ExtResource( 9 )
+
+[node name="Inventory" parent="." instance=ExtResource( 10 )]
 
 [editable path="Mannequiny"]
